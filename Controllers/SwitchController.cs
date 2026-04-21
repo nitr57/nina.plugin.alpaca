@@ -292,7 +292,7 @@ namespace NINA.Alpaca.Controllers {
                 var theSwitch = ((DeviceMediator.GetDevice() as ISwitchHub).Switches.ElementAt(Id) as IWritableSwitch) ?? throw new ASCOM.NotImplementedException("SetSwitchValue");
                 theSwitch.TargetValue = State ? 1 : 0;
                 try {
-                    await theSwitch.SetValue();
+                    theSwitch.SetValue();
                 } catch { }
             });
         }
@@ -315,7 +315,7 @@ namespace NINA.Alpaca.Controllers {
 
                 theSwitch.TargetValue = Value;
                 try {
-                    await theSwitch.SetValue();
+                    theSwitch.SetValue();
                 } catch { }
             });
         }
