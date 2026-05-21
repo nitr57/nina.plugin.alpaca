@@ -12,6 +12,7 @@
     <Product>Alpaca</Product>
     <Description>A plugin to host all N.I.N.A. devices as Alpaca Devices to be accessed from other applications</Description>
     <Copyright>Copyright © 2021-2026</Copyright>
+    <Version>1.0.2.0</Version>
     <DefaultItemExcludes Condition="$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))">$(DefaultItemExcludes);**/*.xaml.cs;**/*.xaml</DefaultItemExcludes>
   </PropertyGroup>
   <ItemGroup>
